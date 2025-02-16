@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            padding: 0.8rem 2rem;
+            background: #4e54c8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #8f94fb;
+        }
+        section {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #4e54c8;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ModernSite</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#login">Login</a>
+        <a href="#signup">Signup</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Our Modern Website</h1>
+    <p>Experience the best services with cutting-edge technology.</p>
+    <button class="btn">Get Started</button>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We provide modern solutions tailored to your needs.</p>
+</section>
+
+<section id="services" class="grid">
+    <div class="card">
+        <h3>Web Development</h3>
+        <p>Modern and responsive websites built with the latest technologies.</p>
+    </div>
+    <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Intuitive and user-friendly designs to enhance user experience.</p>
+    </div>
+    <div class="card">
+        <h3>SEO Optimization</h3>
+        <p>Boost your website's visibility and reach a wider audience.</p>
+    </div>
+</section>
+
+<section id="features">
+    <h2>Features</h2>
+    <p>Discover the unique features that set us apart.</p>
+</section>
+
+<section id="pricing" class="grid">
+    <div class="card">
+        <h3>Basic Plan</h3>
+        <p>$19/month - Essential features for small businesses.</p>
+    </div>
+    <div class="card">
+        <h3>Pro Plan</h3>
+        <p>$49/month - Advanced tools for growing businesses.</p>
+    </div>
+    <div class="card">
+        <h3>Enterprise Plan</h3>
+        <p>$99/month - Comprehensive solutions for large-scale operations.</p>
+    </div>
+</section>
+
+<section id="login">
+    <h2>Login</h2>
+    <form>
+        <input type="text" placeholder="Username" required><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        <button type="submit" class="btn">Login</button>
+    </form>
+</section>
+
+<section id="signup">
+    <h2>Signup</h2>
+    <form>
+        <input type="text" placeholder="Username" required><br><br>
+        <input type="email" placeholder="Email" required><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        <button type="submit" class="btn">Signup</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 ModernSite. All rights reserved.
+</footer>
+
+</body>
+</html>
